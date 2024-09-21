@@ -1,414 +1,440 @@
-body, html {
-    height: 100%;
-    margin: 0;
+body,
+html {
+  height: 100%;
+  margin: 0;
 }
 
 .header {
-    position: relative; /* Necessário para posicionar o pseudo-elemento */
-    background: url('./img/fotoideia.png') no-repeat center center/cover;
-    height: 100vh;
+  position: relative; /* Necessário para posicionar o pseudo-elemento */
+  background: url("./img/fotoideia.png") no-repeat center center/cover;
+  height: 100vh;
 }
 
 .header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Escurece a imagem com uma camada preta com 50% de opacidade */
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Escurece a imagem com uma camada preta com 50% de opacidade */
+  z-index: 1;
 }
 
 .navbar {
-    position: relative;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 2; /* Garante que o conteúdo fique acima da camada escura */
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2; /* Garante que o conteúdo fique acima da camada escura */
 }
 
 .hero-section {
-    position: relative;
-    height: 80vh;
-    z-index: 2; /* Garante que o conteúdo fique acima da camada escura */
+  position: relative;
+  height: 80vh;
+  z-index: 2; /* Garante que o conteúdo fique acima da camada escura */
 }
 
-.hero-section h1, .hero-section h2, .hero-section h3, .hero-section p {
-    margin: 0;
+.hero-section h1,
+.hero-section h2,
+.hero-section h3,
+.hero-section p {
+  margin: 0;
 }
 
 .btn-light {
-    background-color: #FF5722;
-    border: none;
+  background-color: #ff5722;
+  border: none;
 }
 
 @media (max-width: 768px) {
-    .hero-section {
-        padding: 20px;
-    }
+  .hero-section {
+    padding: 20px;
+  }
 
-    .hero-section h1 {
-        font-size: 2rem;
-    }
+  .hero-section h1 {
+    font-size: 2rem;
+  }
 
-    .hero-section h2 {
-        font-size: 1.5rem;
-    }
+  .hero-section h2 {
+    font-size: 1.5rem;
+  }
 
-    .hero-section h3 {
-        font-size: 1.2rem;
-    }
+  .hero-section h3 {
+    font-size: 1.2rem;
+  }
 }
 
 /* secao 1*/
 .about-section {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .about-section h2 {
-    color: #A63E14; /* Cor do título principal */
+  color: #a63e14; /* Cor do título principal */
 }
 
 .about-section p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
+.img-fluid {
+  width: 500px;
+}
 
+/*secao 2*/
 
-  .img-fluid{
-    width: 500px;
-
-  }
-
-  /*secao 2*/
-
-  .diferenciais-section {
-    background-color: #f4f4f4;
-    padding: 50px 0;
+.diferenciais-section {
+  background-color: #f4f4f4;
+  padding: 50px 0;
 }
 
 .diferenciais-section h2 {
-    color: #A63E14;
-    margin-bottom: 40px;
+  color: #a63e14;
+  margin-bottom: 40px;
 }
 
 .diferencial-item {
-    padding: 20px;
+  padding: 20px;
 }
 
 .diferencial-item .icon {
-    background-color: #A63E14;
-    padding: 20px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #a63e14;
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .diferencial-item h3 {
-    font-size: 1.1rem;
-    margin-top: 15px;
-    color: #333;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  color: #333;
 }
 
 .diferencial-item p {
-    font-size: 0.95rem;
-    color: #666;
-    margin-top: 10px;
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 10px;
 }
-
 
 /*secao 3*/
 .solucoes-section {
-    background-color: #ffffff;
-    padding: 50px 0;
+  background-color: #ffffff;
+  padding: 50px 0;
 }
 
 .solucoes-section h2 {
-    color: #A63E14;
-    margin-bottom: 40px;
+  color: #a63e14;
+  margin-bottom: 40px;
 }
 
 .solucoes-section .solucoes-list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .solucoes-section .solucoes-list li {
-    margin-bottom: 15px;
-    font-size: 1rem;
-    color: #333;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #333;
 }
 
 .solucoes-section .solucoes-list li strong {
-    color: #A63E14; /* Destaque para o título de cada item */
+  color: #a63e14; /* Destaque para o título de cada item */
 }
 
 .icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*seção 4*/
 
-
 .services-section {
-    background-color: #f0f0f0; /* Fundo cinza claro para toda a seção */
-    padding: 50px 0;
+  background-color: #f0f0f0; /* Fundo cinza claro para toda a seção */
+  padding: 50px 0;
 }
 
 .service-card {
-    height: 100%;
-    border: none;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: white; /* Fundo branco dos cards */
-    color: black; /* Texto preto */
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white; /* Fundo branco dos cards */
+  color: black; /* Texto preto */
 }
 
 .service-card .card-body {
-    padding: 20px;
+  padding: 20px;
 }
 
 .service-card h5 {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    color: #333; /* Título em cinza escuro */
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333; /* Título em cinza escuro */
 }
 
 .service-card ul {
-    padding: 0;
-    font-size: 0.9rem;
+  padding: 0;
+  font-size: 0.9rem;
 }
 
 .service-card ul li {
-    margin-bottom: 8px;
-    color: #333; /* Texto das listas em cinza escuro */
+  margin-bottom: 8px;
+  color: #333; /* Texto das listas em cinza escuro */
 }
 
 .service-card i {
-    color: #A63E14; /* Ícones em preto */
+  color: #a63e14; /* Ícones em preto */
 }
-
 
 /*seção 5*/
 .challenges-section {
-    background-color: #f0f0f0; /* Fundo cinza claro da seção */
-    padding: 50px 0;
+  background-color: #f0f0f0; /* Fundo cinza claro da seção */
+  padding: 50px 0;
 }
 
 .section-title {
-    font-size: 2rem;
-    color: #A63E14; /* Cor do título da seção */
-    margin-bottom: 30px;
+  font-size: 2rem;
+  color: #a63e14; /* Cor do título da seção */
+  margin-bottom: 30px;
 }
 
 .challenge-card {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    color: #333; /* Cor do texto padrão */
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: #333; /* Cor do texto padrão */
 }
 
 .challenge-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .challenge-card-red {
-    border-left: 5px solid #A63E14; /* Borda colorida para destacar */
+  border-left: 5px solid #a63e14; /* Borda colorida para destacar */
 }
 
 .challenge-card-dark {
-    border-left: 5px solid #333; /* Borda escura para destaque */
+  border-left: 5px solid #333; /* Borda escura para destaque */
 }
 
 .challenge-title {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #333; /* Cor do texto nos cards */
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333; /* Cor do texto nos cards */
 }
 
 .challenge-icon {
-    font-size: 2.5rem;
-    color: #A63E14; /* Cor dos ícones */
+  font-size: 2.5rem;
+  color: #a63e14; /* Cor dos ícones */
 }
 
 .btn-specialist {
-    background-color: #A63E14;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
+  background-color: #a63e14;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .btn-specialist:hover {
-    background-color: #872d11; /* Mudança de cor ao passar o mouse */
+  background-color: #872d11; /* Mudança de cor ao passar o mouse */
 }
-
 
 /*secao6*/
 
 .contact-section {
-    background: #f8f8f8;
-    padding: 60px 20px;
-    color: #4b4b4b;
-    border-radius: 8px;
+  background: #f8f8f8;
+  padding: 60px 20px;
+  color: #4b4b4b;
+  border-radius: 8px;
 }
 
 .contact-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #823c0d;
-    
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #823c0d;
 }
-.contact-info-title{
-    padding-top: 30px;
+.contact-info-title {
+  padding-top: 30px;
 }
-
 
 .form-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #823c0d;
+  font-size: 18px;
+  font-weight: bold;
+  color: #823c0d;
 }
 
 .form-subtitle {
-    font-size: 14px;
-    margin-bottom: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .form-control {
-    border: 1px solid #ddd;
-    border-radius: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .submit-button {
-    background-color: #4b4b4b;
-    border: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  background-color: #4b4b4b;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .submit-button:hover {
-    background-color: #333;
+  background-color: #333;
 }
 
 .contact-info-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #823c0d;
-    margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #823c0d;
+  margin-bottom: 15px;
 }
 
 .contact-info-list {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .contact-info-list li {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .contact-info-list a {
-    color: #823c0d;
-    text-decoration: none;
+  color: #823c0d;
+  text-decoration: none;
 }
 
 .contact-info-list a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 /*footer*/
 
 .footer-section {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    text-align: center; /* Centraliza o texto */
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  text-align: center; /* Centraliza o texto */
 }
 
 .containerfooter {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza os elementos dentro da .container */
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os elementos dentro da .container */
+  justify-content: center;
 }
 
 .footer-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .social-icons {
-    display: flex;
-    gap: 10px;
-    justify-content: center; /* Centraliza os ícones sociais */
-    margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Centraliza os ícones sociais */
+  margin-bottom: 10px;
 }
 
 .social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    background-color: #823c0d;
-    border-radius: 4px;
-    color: #fff;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: #823c0d;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .social-icon i {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .btn-whatsapp {
-    background-color: #823c0d;
-    border: none;
-    padding: 10px 20px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s;
-    margin-top: 10px;
+  background-color: #823c0d;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+  margin-top: 10px;
 }
 
 .btn-whatsapp:hover {
-    background-color: #5b2a07;
+  background-color: #5b2a07;
 }
 
 .agency-info {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 10px;
 }
 
 .footer-bottom {
-    font-size: 12px;
-    color: #ccc;
-    margin-top: 15px;
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 15px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #a63e14;
+    color: white;
+    width: 50px; /* Define o tamanho do círculo */
+    height: 50px;
+    border-radius: 50%; /* Faz o botão ficar redondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none; /* Inicialmente escondido */
+    transition: opacity 0.3s, background-color 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+    font-size: 20px; /* Define o tamanho do ícone dentro */
+}
+
+.back-to-top:hover {
+    background-color: #8c3210; /* Muda a cor ao passar o mouse */
 }
