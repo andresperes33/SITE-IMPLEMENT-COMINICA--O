@@ -26,16 +26,17 @@ html {
   z-index: 1;
 }
 
+
 .navbar {
   position: relative;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 2; /* Garante que o conteúdo fique acima da camada escura */
+  line-height: 10px;
+  z-index: 1; /* Garante que o conteúdo fique acima da camada escura */
 }
 
 .hero-section {
   position: relative;
   height: 80vh;
-  z-index: 2; /* Garante que o conteúdo fique acima da camada escura */
+  z-index: 2 /* Garante que o conteúdo fique acima da camada escura */
 }
 
 .hero-section h1,
@@ -50,23 +51,44 @@ html {
   border: none;
 }
 
+/* Estilos padrão (desktop) */
+.display-4 {
+  font-size: 2rem;
+}
+
+.display-6 {
+  font-size: 1.5rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+.mt-3 {
+  font-size: 1.2rem;
+}
+
+/* Estilos responsivos para dispositivos móveis */
 @media (max-width: 768px) {
-  .hero-section {
-    padding: 20px;
+  .display-4 {
+      font-size: 1.2rem; /* Reduz pela metade */
   }
 
-  .hero-section h1 {
-    font-size: 2rem;
+  .display-6 {
+      font-size: 0.85rem; /* Reduz pela metade */
   }
 
-  .hero-section h2 {
-    font-size: 1.5rem;
+  .lead {
+      font-size: 0.85rem; /* Reduz pela metade */
   }
 
-  .hero-section h3 {
-    font-size: 1.2rem;
+  .mt-3 {
+      font-size: 0.7rem; /* Reduz pela metade */
   }
 }
+
+
+
 
 /* secao 1*/
 .about-section {
